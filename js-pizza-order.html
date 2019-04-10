@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizza Order Simulator</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Order!</h1>
+    <hr />
+
+    <script>
+
+        var pCost = 5.99;
+        
+        var name = prompt("what is your name? ");
+        alert("Okay " + name + " A Pizza Cost $5.99 Each. ");
+        var ammount = prompt("How many Pizza's would you like?");
+        var pType = prompt("what kind of pizza would you like?");
+        var totalCost = pCost * ammount;
+
+        totalCost = totalCost.toFixed(2);
+
+        document.write("Perfect! "+ name + " Your Order Total is $" + totalCost + " For " + ammount + " pizza's that are " + pType);
+
+    </script>
+</body>
+</html>
